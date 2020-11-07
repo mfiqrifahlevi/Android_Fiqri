@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        android:text="Angka Pertama"
+        />
+
+    <EditText
+        android:id="@+id/etAngkaPertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angka pertama"
+        />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="73dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="220dp"
-        android:text="@string/my_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka Kedua"
+        />
+
+    <EditText
+        android:id="@+id/etAngkaKedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="angka kedua"
+        />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="24sp"
+        />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
